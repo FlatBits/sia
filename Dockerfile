@@ -1,11 +1,13 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 ENV PATH /opt/sia/bin:$PATH
 ENV SIA_MODULES gctwhr
 ENV SIA_DATA_DIR /opt/sia/data
+ENV SIAD_DATA_DIR /opt/sia/siad-data
 ENV MOUNT_FILE /var/mount/fstab
 
 EXPOSE 9982
+EXPOSE 9983
 
 COPY sia /opt/sia
 COPY scripts /scripts
