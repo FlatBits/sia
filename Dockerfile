@@ -6,8 +6,7 @@ ENV SIA_DATA_DIR /opt/sia/data
 ENV SIAD_DATA_DIR /opt/sia/siad-data
 ENV MOUNT_FILE /var/mount/fstab
 
-EXPOSE 9982
-EXPOSE 9983
+EXPOSE 9980 9982 9983
 
 COPY sia /opt/sia
 COPY scripts /scripts
