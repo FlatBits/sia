@@ -5,7 +5,7 @@ ENV SIA_MODULES gctwhr
 ENV SIA_DATA_DIR /opt/sia/data
 ENV SIAD_DATA_DIR /opt/sia/siad-data
 
-EXPOSE 9980 9982 9983
+EXPOSE 9980 9981 9982 9983 9984
 
 COPY sia /opt/sia
 COPY scripts /scripts
